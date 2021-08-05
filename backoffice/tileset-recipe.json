@@ -1,0 +1,14 @@
+{
+  "recipe": {
+    "version": 1,
+    "layers": {
+      "skating_comfort_v2": {
+        "source": "mapbox://tileset-source/anticristi/skating_comfort",
+        "minzoom": 0,
+        "maxzoom": 16
+      }
+    }
+  },
+  "name": "Skating comfort",
+  "description": "Ways annotated with skating_comfort."
+}
