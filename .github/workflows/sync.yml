@@ -23,6 +23,8 @@ jobs:
       
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
+        env:
+          MAPBOX_ACCESS_TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
         run: |
           cd backoffice
           pip3 install -r requirements.txt
