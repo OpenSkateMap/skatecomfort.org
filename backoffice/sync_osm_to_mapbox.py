@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger('sync_osm_to_mapbox')
 
 logger.info('Loading skating_comfort from OSM')
-api = overpass.API()
+api = overpass.API(timeout=60)
 response = api.get(QUERY, responseformat="geojson", verbosity='geom')
 
 logger.info('Got %d features', len(response["features"]))
